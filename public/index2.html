@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>React App</title>
+  </head>
+  <body>
+    <h1 id="displayText">Enter text below:</h1>
+    <input type="text" id="inputField" placeholder="Type here...">
+
+    <script>
+      const inputField = document.getElementById('inputField');
+      const displayText = document.getElementById('displayText');
+
+      inputField.addEventListener('input', (event) => {
+        displayText.textContent = event.target.value || "Enter text below:";
+      });
+    </script>
+  </body>
+</html>
